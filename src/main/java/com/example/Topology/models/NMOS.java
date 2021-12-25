@@ -1,11 +1,10 @@
 package com.example.Topology.models;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.HashMap;
 
-public class NMOS extends Transistor{
+
+public class NMOS extends Transistor {
 
     public HashMap<String, Double> getM() {
         return m;
@@ -17,11 +16,17 @@ public class NMOS extends Transistor{
 
     HashMap<String, Double> m;
 
-    public NMOS(String type ,
-                String id ,
-                HashMap<String, Double> m ,
-                HashMap<String, String> netlist){
-        super(type ,  id  ,  netlist);
+    /**
+     * @param {String}  type
+     * @param {String}  id
+     * @param {HashMap} resistance
+     * @param {HashMap} netlist
+     */
+    public NMOS(String type,
+                String id,
+                HashMap<String, Double> m,
+                HashMap<String, String> netlist) {
+        super(type, id, netlist);
         this.m = m;
     }
 

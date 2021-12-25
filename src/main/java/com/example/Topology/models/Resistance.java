@@ -7,11 +7,20 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.HashMap;
 
+/**
+ * Resistance class
+ * */
 public class Resistance extends Device {
 
     HashMap<String, Double> resistance;
 
 
+    /**
+     * @param  {String} type
+     * @param  {String} id
+     * @param  {HashMap} resistance
+     * @param {HashMap} netlist
+     * */
     public Resistance( String type,
                        String id,
                        HashMap<String, Double> resistance,

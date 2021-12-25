@@ -2,17 +2,15 @@ package com.example.Topology.models;
 
 
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 import java.util.ArrayList;
 import java.util.HashMap;
+
 public class Topology {
 
     String id;
 
 
     ArrayList<Device> components;
-
 
 
     public Topology() {
@@ -35,6 +33,11 @@ public class Topology {
         this.components = topComponent;
     }
 
+
+    /**
+     * @param {String}  NetlistNodeID
+     * @return  Arraylist of connected devices
+     */
     public ArrayList getDevicesConnectedTo(String NetlistNodeID) {
 
 
@@ -46,7 +49,7 @@ public class Topology {
             }
         });
 
-            return connectedDevices;
+        return connectedDevices;
 
 
     }

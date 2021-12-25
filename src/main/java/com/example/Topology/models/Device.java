@@ -1,22 +1,26 @@
 package com.example.Topology.models;
 
 
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import java.util.HashMap;
 
-import static com.fasterxml.jackson.annotation.JsonTypeInfo.As.PROPERTY;
-import static com.fasterxml.jackson.annotation.JsonTypeInfo.Id.NAME;
 
 
-
+/**
+ * Device class
+ * */
 public abstract class Device {
 
     String type;
     String id;
     HashMap<String, String> netlist;
 
+
+    /**
+     * @param  {String} type
+     * @param  {String} id
+     * @param {HashMap} netlist
+     * */
     public Device(String type,
            String id,
            HashMap<String, String> netlist) {
