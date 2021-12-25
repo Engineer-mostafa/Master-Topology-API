@@ -1,4 +1,4 @@
-#  :dart:Master-Topology-API Spring Boot (Maven)
+#  :dart: Master-Topology-API Spring Boot (Maven)
 
 1. Read and write topologies to and from disk.
 2. Stores multiple topologies in memory.
@@ -34,12 +34,12 @@
 :closed_book: server at http://localhost:8082/
  
 
- :globe_with_meridians:`http://localhost:8082/readJSON/top` top = (name of the file) <br>
- :globe_with_meridians:`http://localhost:8082/queryTopologies` <br>
- :globe_with_meridians:`http://localhost:8082/writeJSON/topId`  topid = (topology id )<br>
- :globe_with_meridians:`http://localhost:8082/deleteTopology/topId`  topid = (topology id )<br>
- :globe_with_meridians:`http://localhost:8082/queryDevices/topId`  topid = (topology id )<br>
- :globe_with_meridians:`http://localhost:8082/queryDevicesWithNetlistNode/topId/node` topid = (topology id ) , node = (one node of any device) <br>
+ :globe_with_meridians: `http://localhost:8082/readJSON/top` top = (name of the file) <br>
+ :globe_with_meridians: `http://localhost:8082/queryTopologies` <br>
+ :globe_with_meridians: `http://localhost:8082/writeJSON/topId`  topid = (topology id )<br>
+ :globe_with_meridians: `http://localhost:8082/deleteTopology/topId`  topid = (topology id )<br>
+ :globe_with_meridians: `http://localhost:8082/queryDevices/topId`  topid = (topology id )<br>
+ :globe_with_meridians: `http://localhost:8082/queryDevicesWithNetlistNode/topId/node` topid = (topology id ) , node = (one node of any device) <br>
  
  
 
